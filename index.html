@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+            <link rel="stylesheet" href="css/custom-theme1.min.css" />
+            <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.0.min.css" />
+             <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.css" />
+          	<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
+          	<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.0.min.css" />-->
+          	<script src="js/jquery-1.8.3.min.js"></script>
+          	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+            
+			<title>My Website Assignment  </title>
+            <style>
+            #Newbutton{
+				border:3px solid green
+				}
+            </style>
+            
+            <script>
+            if(slider == "true"){
+				alert("Hi")
+				}
+            </script>
+            
+            <!-- "images" directory must be copied under css folder -->
+<link rel="stylesheet" href="css/jquery.mobile.flip.css" />
+<script type="text/javascript" src="js/jquery.mobile.flip.js"></script>
+	</head>
+
+<body> 
+
+<div data-role="page" >
+    <div data-role="header" >
+       <h1>My Mobile Website Assignment 2014</h1> 
+       <a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini ui-btn-right ui-btn-icon-left ui-icon-info" href="#mypanel">About this Website</a>
+    </div>
+    
+    <div data-role="content" data-theme="b" >
+         <div id="banner" >
+              <h4> About this assignment</h4>
+         </div>
+        
+        <p> In this Preliminary Software Design and Development assignment you will learn how to build a Mobile Website using JQuery Mobile Framework. </p>
+        <p> You will learn about HTML tags, CSS stylesheets, Javascript and the DOM.   </p>
+        <p>You will investigate what HTML 5 actually is, identify programming control structures and answer some focus questions relating the the theory in this course.</p>
+        <p> Hope you enjoy the course.</p>
+        
+
+        
+        <!---//data-transition=    slide, slideup,slidedown, pop, fade, flip --->
+          <!---//data-theme=     a ,b --->
+        <ul data-role="listview" data-inset="true" > 
+            <li>    <a href="aboutme.html" data-transition="fade"  rel="external">About Me</a>    </li>
+            <li><a href="html5.html" data-transition="pop"   rel="external">HTML 5 information</a></l>
+            <li>  <a href="buildingblocks.html"  data-transition="flip"  >Building Blocks</a></li>
+            <li><a href="drivingquestions.html"  rel="external">Driving Questions</a></li>
+            <li><a href="websitedevelopment.html"  rel="external">Website Development</a></li>
+            <li><a href="storyboard.html"  rel="external">Storyboard</a></li>
+            <li><a href="sandbox.html" rel="external">Sandbox Page</a></li>
+           
+        </ul>
+            
+    </div>
+
+      <div data-role="panel" id="mypanel" data-display="overlay" data-position="right">
+          <a href="#my-header" data-rel="close">Close panel</a> 
+          <h2> About this Website </h2>
+          <p> Created by Peter Cox &copy; PCSquared 2014 </p>
+          <p> This Website is created using the JQuery Mobile Framework: http://filamentgroup.com/examples/jqm-overflow-touch-enabled/
+          <br>
+                <p>This Website Works on: <br>
+               <strong> Firefox:</strong>  Version 26.0 <br>
+               <strong> Sarfari:</strong> Version 5.1.6 <br>
+               <strong> Chrome:</strong> Version Version 31.0.1650.63 <br>
+                <em>Problem with Chrome: </em><br>
+                Bug on the Homepage Links: <br>
+                When you click the home page links in Chrome you get the Error Message- "Error Loading Page".<br>
+                <em>Solution: </em><br>
+                1) You can’t work with jquerymobile with the protocol file:// it has to be a web address. <br>
+                After moving it to a server, with protocol http:// it worked immediately.  <br>
+                OR <br>
+                2) Add "rel="external" to your link properties. eg <a href="aboutme.html" data-transition="slide" rel="external">About Me</a>   The link will now work BUT you will lose the transitions and the back link on the next page.
+                <br> <br>
+               <strong>How do I change the Look and Feel</strong><br>
+               1. Go to ThemeRoller: http://themeroller.jquerymobile.com/ <br>
+               2. Create a new CSS Theme , download it to the css folder  <br>
+               3. Link to it in each page 
+               </p>
+          <a href="#my-header" data-rel="close">Close panel</a> 
+     </div><!-- /panel -->
+                
+                   
+     <div data-role="footer" >
+     	<h6>  Bradfield Senior College - PSDD</h6>
+     </div>
+</div>
+
+<div id="flipRoot" data-role="flip">
+   <div>
+    <p>Hi</p>
+   </div>
+   <p>
+     <p>Hi</p>
+   </p>
+   <section>
+     <p>Hi</p>
+   </section>
+</div>
+
+
+</body>
+</html>
+
+
+
+
