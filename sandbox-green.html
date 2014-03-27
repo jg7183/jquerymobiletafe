@@ -11,17 +11,31 @@
 			background-color:green;
 			color:white;
 			}
+			
+			#redbutton{
+				color:white;
+				background-color:red;
+				
+				}
 		
 		
 		
 		}
     
     </style>
+    
+    <script>
+    function samepage(){
+		alert('Your already on green!')
+		
+		}
+    
+    </script>
 			<title>My Website Assignment    </title>
             <link rel="stylesheet" href="css/custom-theme1.min.css" />
             <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.0.min.css" />
              <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.css" />
-         <link rel="stylesheet" href="css/sandboxred/themes/sandboxred.min.css" />
+         <link rel="stylesheet" href="css/sandboxgreen/themes/sandboxgreen.min.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
           	<script src="js/jquery-1.8.3.min.js"></script>
           	<script src="js/jquery.mobile-1.4.0.min.js"></script>
@@ -85,8 +99,8 @@
         
         </div><!-- /content -->
         <div data-role="footer" >
-       			<h6>Bradfield Senior College - PSDD </h5><a href="sandbox red.html" rel="external" data-role="button">Red</a> <a href="sandbox-blue.html" id="bluebutton" rel="external" data-role="button">Blue</a>
-                <a href="sandbox-green.html" id="greenbutton" rel="external" data-role="button">Green</a>
+       			<h6>Bradfield Senior College - PSDD </h5><a href="sandbox-red.html" rel="external" data-role="button" id="redbutton">Red</a> <a href="sandbox-blue.html" id="bluebutton" rel="external" data-role="button">Blue</a>
+                <a href=""id="greenbutton" rel="external" data-role="button" onClick="samepage()">Green</a>
                
     	</div>     
  </div>
